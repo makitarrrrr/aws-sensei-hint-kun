@@ -5,8 +5,6 @@
 
 AWS用語のヒントをツールチップで表示するChrome拡張機能です。Webページ上のAWS用語にマウスオーバーすると、詳細な説明をツールチップで表示します。
 
-![AWS Terms Dictionary Demo](https://via.placeholder.com/800x400/f0f0f0/333333?text=Demo+Screenshot)
-
 ## 🚀 特徴
 
 - **自動検出**: Webページ上のAWS用語を自動でハイライト表示
@@ -83,39 +81,8 @@ AWS用語のヒントをツールチップで表示するChrome拡張機能で�
 
 詳細は[プライバシーポリシー](PRIVACY_POLICY.md)をご確認ください。
 
-## 🤝 貢献
-
-プロジェクトへの貢献を歓迎します！
-
-### バグ報告・機能要望
-- [Issues](https://github.com/yourusername/aws-terms-dictionary/issues)でバグ報告や機能要望をお送りください
-
-### 用語の追加・修正
-1. `data/aws-terms-ja.json`（日本語）と`data/aws-terms-en.json`（英語）を編集
-2. Pull Requestを作成
-
-### 開発に参加
-1. リポジトリをフォーク
-2. 機能ブランチを作成 (`git checkout -b feature/amazing-feature`)
-3. 変更をコミット (`git commit -m 'Add amazing feature'`)
-4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
-5. Pull Requestを作成
-
 ## 📄 ライセンス
 
 このプロジェクトは[MIT License](LICENSE)の下で公開されています。
-
-## 🙏 謝辞
-
-- AWS用語の説明はAIによって生成されています
-- アイコンは[適切なクレジット]から使用
-
-## 📞 サポート
-
-- **バグ報告**: [GitHub Issues](https://github.com/yourusername/aws-terms-dictionary/issues)
-- **機能要望**: [GitHub Issues](https://github.com/yourusername/aws-terms-dictionary/issues)
-- **質問**: [GitHub Discussions](https://github.com/yourusername/aws-terms-dictionary/discussions)
-
----
 
 ⭐ このプロジェクトが役に立った場合は、スターをつけていただけると嬉しいです！
