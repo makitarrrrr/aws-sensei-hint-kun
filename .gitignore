@@ -1,0 +1,38 @@
+# テストファイル
+*.test.html
+*-test.html
+test.html
+comprehensive-test.html
+katakana-mixed-test.html
+katakana-test.html
+multi-word-test.html
+security-group-test.html
+control-tower-test.html
+
+# バックアップファイル
+*.backup
+content.js.backup
+
+# 開発用ファイル
+.vscode/
+README_TEST.md
+STORE_DESCRIPTION.md
+
+# ビルド・パッケージファイル
+*.zip
+dist/
+build/
+
+# ログファイル
+*.log
+npm-debug.log*
+
+# 一時ファイル
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Node.js (将来的に使用する可能性)
+node_modules/
+package-lock.json

@@ -1,0 +1,485 @@
+/* AWS用語ハイライトのスタイル */
+.aws-term-highlight {
+  background-color: #fffbf0;
+  border: 1px solid #fff2d9;
+  border-radius: 3px;
+  padding: 1px 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: #8b7355;
+  font-weight: 500;
+}
+
+.aws-term-highlight:hover {
+  background-color: #fff3cd;
+  border-color: #ffeaa7;
+  color: #856404;
+  text-decoration: none;
+}
+
+.aws-term-highlight:active {
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+
+/* AWS用語辞書ツールチップのスタイル */
+.aws-tooltip {
+  position: absolute;
+  background: #ffffff;
+  border: 2px solid #ff9900;
+  border-radius: 8px;
+  padding: 12px;
+  max-width: 450px;
+  max-height: 600px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* 文字サイズ設定 */
+.aws-tooltip.font-small {
+  font-size: 12px;
+}
+
+.aws-tooltip.font-small .aws-tooltip-header strong {
+  font-size: 14px;
+}
+
+.aws-tooltip.font-small .aws-tooltip-name,
+.aws-tooltip.font-small .aws-tooltip-description {
+  font-size: 11px;
+}
+
+.aws-tooltip.font-medium {
+  font-size: 14px;
+}
+
+.aws-tooltip.font-medium .aws-tooltip-header strong {
+  font-size: 16px;
+}
+
+.aws-tooltip.font-medium .aws-tooltip-name,
+.aws-tooltip.font-medium .aws-tooltip-description {
+  font-size: 13px;
+}
+
+.aws-tooltip.font-large {
+  font-size: 16px;
+  max-width: 500px;
+}
+
+.aws-tooltip.font-large .aws-tooltip-header strong {
+  font-size: 18px;
+}
+
+.aws-tooltip.font-large .aws-tooltip-name,
+.aws-tooltip.font-large .aws-tooltip-description {
+  font-size: 15px;
+}
+
+.aws-tooltip.font-large .pros,
+.aws-tooltip.font-large .cons,
+.aws-tooltip.font-large .reviews {
+  font-size: 14px;
+}
+
+/* 小サイズの詳細調整 */
+.aws-tooltip.font-small .pros,
+.aws-tooltip.font-small .cons,
+.aws-tooltip.font-small .reviews {
+  font-size: 10px;
+}
+
+.aws-tooltip.font-small .review-item {
+  font-size: 10px;
+  padding: 4px 6px;
+}
+
+.aws-tooltip.font-small .aws-tooltip-term-name {
+  font-size: 12px;
+}
+
+/* 中サイズの詳細調整 */
+.aws-tooltip.font-medium .pros,
+.aws-tooltip.font-medium .cons,
+.aws-tooltip.font-medium .reviews {
+  font-size: 12px;
+}
+
+.aws-tooltip.font-medium .aws-tooltip-term-name {
+  font-size: 14px;
+}
+
+/* 大サイズの詳細調整 */
+.aws-tooltip.font-large .review-item {
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+.aws-tooltip.font-large .aws-tooltip-term-name {
+  font-size: 16px;
+}
+
+.aws-tooltip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.aws-tooltip-header strong {
+  color: #ff9900;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.aws-tooltip-close {
+  cursor: pointer;
+  color: #999;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 4px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.aws-tooltip-close:hover {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+/* クリック説明メッセージのスタイル */
+.aws-tooltip .click-info {
+  text-align: center;
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 8px;
+  padding: 4px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border-left: 3px solid #28a745;
+}
+
+.aws-tooltip-name {
+  font-weight: 600;
+  color: #0073bb;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.aws-tooltip-description {
+  color: #555;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* 使い勝手情報のスタイル */
+.aws-tooltip-usability {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+
+
+.pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.pros, .cons {
+  font-size: 12px;
+}
+
+.pros strong {
+  color: #4caf50;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.cons strong {
+  color: #f44336;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pros ul, .cons ul {
+  margin: 0;
+  padding-left: 16px;
+  list-style-type: none;
+}
+
+.pros li, .cons li {
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.pros li:before {
+  content: "✓";
+  color: #4caf50;
+  position: absolute;
+  left: -12px;
+}
+
+.cons li:before {
+  content: "!";
+  color: #f44336;
+  position: absolute;
+  left: -12px;
+}
+
+.reviews {
+  font-size: 12px;
+}
+
+.reviews strong {
+  color: #2196f3;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.review-list {
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.review-item {
+  background: #f8f9fa;
+  padding: 6px 8px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  border-left: 3px solid #2196f3;
+  font-style: italic;
+  color: #666;
+  line-height: 1.3;
+}
+
+/* 複数用語表示用のスタイル */
+.aws-tooltip-separator {
+  border-top: 1px solid #e0e0e0;
+  margin: 12px 0;
+}
+
+.aws-tooltip-term-name {
+  font-weight: bold;
+  color: #ff9900;
+  font-size: 14px;
+  margin-bottom: 6px;
+  padding: 4px 8px;
+  background: #fff8f0;
+  border-radius: 4px;
+  border-left: 3px solid #ff9900;
+}
+
+.aws-tooltip-usability-compact {
+  margin-top: 8px;
+  padding: 6px 0;
+}
+
+.compact-pros-cons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.compact-pros, .compact-cons {
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.compact-pros {
+  color: #4caf50;
+}
+
+.compact-cons {
+  color: #f44336;
+}
+
+/* 複数用語の場合のツールチップサイズ調整 */
+.aws-tooltip:has(.aws-tooltip-separator) {
+  max-width: 500px;
+  max-height: 700px;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 480px) {
+  .aws-tooltip {
+    max-width: 280px;
+    font-size: 13px;
+  }
+  
+  .aws-tooltip-header strong {
+    font-size: 15px;
+  }
+  
+  .aws-tooltip-name,
+  .aws-tooltip-description {
+    font-size: 12px;
+  }
+}
+
+/* ライトテーマ強制 */
+.aws-theme-light .aws-term-highlight {
+  background-color: #fffbf0;
+  border-color: #fff2d9;
+  color: #8b7355;
+}
+
+.aws-theme-light .aws-term-highlight:hover {
+  background-color: #fff3cd;
+  border-color: #ffeaa7;
+  color: #856404;
+}
+
+.aws-theme-light .aws-term-highlight:active {
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+
+.aws-theme-light .aws-tooltip {
+  background: #ffffff;
+  border-color: #ff9900;
+  color: #333;
+}
+
+.aws-theme-light .aws-tooltip-header {
+  border-bottom-color: #eee;
+}
+
+.aws-theme-light .aws-tooltip-name {
+  color: #0073bb;
+}
+
+.aws-theme-light .aws-tooltip-description {
+  color: #555;
+}
+
+.aws-theme-light .aws-tooltip-close:hover {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.aws-theme-light .aws-tooltip .click-info {
+  background: #f8f9fa;
+  color: #666;
+  border-left-color: #28a745;
+}
+
+/* ダークテーマ強制 */
+.aws-theme-dark .aws-term-highlight {
+  background-color: #665500;
+  border-color: #998800;
+  color: #fff3cd;
+}
+
+.aws-theme-dark .aws-term-highlight:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000000;
+}
+
+.aws-theme-dark .aws-term-highlight:active {
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+
+.aws-theme-dark .aws-tooltip {
+  background: #2d2d2d;
+  border-color: #ff9900;
+  color: #e0e0e0;
+}
+
+.aws-theme-dark .aws-tooltip-header {
+  border-bottom-color: #444;
+}
+
+.aws-theme-dark .aws-tooltip-name {
+  color: #4da6ff;
+}
+
+.aws-theme-dark .aws-tooltip-description {
+  color: #ccc;
+}
+
+.aws-theme-dark .aws-tooltip-close:hover {
+  background-color: #404040;
+  color: #fff;
+}
+
+.aws-theme-dark .aws-tooltip .click-info {
+  background: #3d3d3d;
+  color: #ccc;
+  border-left-color: #28a745;
+}
+
+/* ダークモード対応（自動テーマ時のみ） */
+@media (prefers-color-scheme: dark) {
+  .aws-term-highlight {
+    background-color: #665500;
+    border-color: #998800;
+    color: #fff3cd;
+  }
+  
+  .aws-term-highlight:hover {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000000;
+  }
+  
+  .aws-term-highlight:active {
+    background-color: #ff9900;
+    border-color: #ff9900;
+  }
+  
+  .aws-tooltip {
+    background: #2d2d2d;
+    border-color: #ff9900;
+    color: #e0e0e0;
+  }
+  
+  .aws-tooltip-header {
+    border-bottom-color: #444;
+  }
+  
+  .aws-tooltip-name {
+    color: #4da6ff;
+  }
+  
+  .aws-tooltip-description {
+    color: #ccc;
+  }
+  
+  .aws-tooltip-close:hover {
+    background-color: #404040;
+    color: #fff;
+  }
+  
+  .aws-tooltip .click-info {
+    background: #3d3d3d;
+    color: #ccc;
+    border-left-color: #28a745;
+  }
+}
