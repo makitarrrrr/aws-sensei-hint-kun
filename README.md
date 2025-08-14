@@ -3,11 +3,8 @@
 [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available-brightgreen)](https://chrome.google.com/webstore)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<<<<<<< HEAD
-AWS用語のヒントをツールチップで表示するChrome拡張機能です。Webページ上のAWS用語にクリックすると、詳細な説明をツールチップで表示します。
-=======
-AWS用語のヒントをツールチップで表示するChrome拡張機能です。Webページ上のAWS用語にマウスオーバーすると、詳細な説明をツールチップで表示します。
->>>>>>> 4eab7e6016b426056246201c048e0b2578eaa7a0
+AWS用語のヒントをツールチップで表示するChrome拡張機能です。Webページ上のAWS用語をクリックすると、詳細な説明をツールチップで表示します。
+また、ポップアップから用語を検索し用語説明を表示します。
 
 ## 🚀 特徴
 
@@ -16,7 +13,6 @@ AWS用語のヒントをツールチップで表示するChrome拡張機能で�
 - **多言語対応**: 日本語・英語の両言語をサポート
 - **検索機能**: ポップアップから用語を直接検索
 - **カスタマイズ**: ダークモード、文字サイズ調整
-- **プライバシー重視**: 個人情報の収集は一切なし
 
 ## 📦 インストール
 
@@ -45,7 +41,7 @@ AWS用語のヒントをツールチップで表示するChrome拡張機能で�
 - IAM, Cognito, KMS, WAF, Security Groups
 
 **管理・ガバナンス**
-- CloudWatch, CloudTrail, Control Tower, Guardrails, Account Factory
+- CloudWatch, CloudTrail, Control Tower, Guardrails
 
 その他多数...
 
@@ -53,11 +49,13 @@ AWS用語のヒントをツールチップで表示するChrome拡張機能で�
 
 1. **拡張機能を有効化**
    - 拡張機能アイコンをクリック
-   - 「機能を有効化」ボタンを押す
+   - 「機能を有効化」ボタンを押す  
+   ※ 機能を有効化したあとはWebページの再読み込みを行ってください
 
 2. **AWS用語を確認**
-   - Webページ上のAWS用語が自動でハイライト表示される
-   - 用語にクリックすると詳細説明が表示される
+   - Webページ上のAWS用語が自動でハイライト表示される  
+   ※ AWS用語が含まれているページが対象になります
+   - AWS用語をクリックすると詳細説明が表示される
 
 3. **設定のカスタマイズ**
    - 表示言語の切り替え（日本語/英語）
@@ -65,7 +63,7 @@ AWS用語のヒントをツールチップで表示するChrome拡張機能で�
    - テーマの変更（ライト/ダーク/自動）
 
 4. **用語検索**
-   - ポップアップの検索ボックスから用語を直接検索
+   - ポップアップの検索ボックスからAWS用語を直接検索、説明が表示される
 
 ## 🔒 プライバシー
 
@@ -77,18 +75,7 @@ AWS用語のヒントをツールチップで表示するChrome拡張機能で�
 
 詳細は[プライバシーポリシー](PRIVACY_POLICY.md)をご確認ください。
 
-<<<<<<< HEAD
-
-### バグ報告・機能要望
-- [Issues](https://github.com/yourusername/aws-terms-dictionary/issues)でバグ報告や機能要望をお送りください
 
 ## 📄 ライセンス
 
 このプロジェクトは[MIT License](LICENSE)の下で公開されています。
-=======
-## 📄 ライセンス
-
-このプロジェクトは[MIT License](LICENSE)の下で公開されています。
-
-⭐ このプロジェクトが役に立った場合は、スターをつけていただけると嬉しいです！
->>>>>>> 4eab7e6016b426056246201c048e0b2578eaa7a0
