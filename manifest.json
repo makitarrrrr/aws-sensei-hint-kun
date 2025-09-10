@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AWS Sensei ヒントくん",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AWS用語のヒントをツールチップで表示するChrome拡張機能。Webページ上のAWS用語をクリックすると詳細な説明を表示します。ポップアップから用語を検索し用語説明を表示します",
   "permissions": [
     "activeTab",
