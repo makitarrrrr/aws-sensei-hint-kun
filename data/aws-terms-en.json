@@ -5178,1180 +5178,1117 @@
             ]
         }
     },
-    "Elastic IP": {
-        "name": "Elastic IP Address",
-        "description": "Static public IP address service that assigns fixed public IP addresses to EC2 instances and allows migration between instances.",
-        "usability": {
-            "reviews": [
-                "Having a fixed IP address makes DNS configuration much easier",
-                "Instance failover switching is seamless",
-                "The pricing structure is simple and clear"
-            ],
-            "pros": [
-                "Fixed IP address",
-                "Fast switching",
-                "Simplified DNS configuration"
-            ],
-            "cons": [
-                "Charges when unused",
-                "Regional limitations",
-                "Allocation limits"
-            ]
-        }
-    },
-    "Elastic Fabric Adapter": {
-        "name": "Elastic Fabric Adapter (EFA)",
-        "description": "High-performance network interface that provides low-latency, high-bandwidth communication for HPC and ML workloads.",
-        "usability": {
-            "reviews": [
-                "HPC workload performance has improved dramatically",
-                "Inter-node communication latency has been reduced significantly",
-                "Large-scale parallel processing runs efficiently"
-            ],
-            "pros": [
-                "Ultra-low latency",
-                "High bandwidth",
-                "HPC optimized"
-            ],
-            "cons": [
-                "Limited instance support",
-                "High cost",
-                "Configuration complexity"
-            ]
-        }
-    },
-    "AWS Nitro Enclaves": {
-        "name": "AWS Nitro Enclaves",
-        "description": "Confidential computing environment that creates isolated execution environments within EC2 instances for secure processing of sensitive data.",
-        "usability": {
-            "reviews": [
-                "Sensitive data processing can be done securely with confidence",
-                "Encryption processing performance is also good",
-                "Compliance requirements have been met"
-            ],
-            "pros": [
-                "High security",
-                "Isolated execution environment",
-                "Compliance support"
-            ],
-            "cons": [
-                "Limited instance support",
-                "Development complexity",
-                "Debugging difficulties"
-            ]
-        }
-    },
-    "Cache-Control max-age": {
-        "name": "Cache-Control max-age",
-        "description": "CloudFront cache control directive that specifies the maximum time content should be cached, in seconds.",
-        "usability": {
-            "reviews": [
-                "Fine-grained cache time control is very convenient",
-                "Can optimize based on content update frequency",
-                "Achieved both performance improvement and cost reduction"
-            ],
-            "pros": [
-                "Fine-grained control",
-                "Performance improvement",
-                "Cost optimization"
-            ],
-            "cons": [
-                "Configuration complexity",
-                "Cache invalidation costs",
-                "Update delay risks"
-            ]
-        }
-    },
-    "CloudFront Distribution": {
-        "name": "CloudFront Distribution",
-        "description": "CloudFront delivery configuration unit that defines content delivery from origin servers to end users.",
-        "usability": {
-            "reviews": [
-                "Global delivery configuration was easy to set up",
-                "Multiple origin management is also efficient",
-                "SSL certificate configuration automation is helpful"
-            ],
-            "pros": [
-                "Global delivery",
-                "Flexible configuration",
-                "SSL automation"
-            ],
-            "cons": [
-                "Configuration complexity",
-                "Propagation time",
-                "Debugging difficulties"
-            ]
-        }
-    },
-    "Signed URL": {
-        "name": "Signed URL",
-        "description": "Time-limited access URL that provides temporary access permissions for S3 or CloudFront with secure URLs.",
-        "usability": {
-            "reviews": [
-                "Private content delivery can be done securely",
-                "Time limits prevent unauthorized access with confidence",
-                "Implementation was simpler than expected"
-            ],
-            "pros": [
-                "Secure access",
-                "Time limitations",
-                "Flexible permission control"
-            ],
-            "cons": [
-                "URL management complexity",
-                "Expiration management",
-                "Implementation costs"
-            ]
-        }
-    },
-    "Signed Cookie": {
-        "name": "Signed Cookie",
-        "description": "Authentication cookie containing credentials for efficient access control to multiple files in CloudFront.",
-        "usability": {
-            "reviews": [
-                "Access control for multiple files is efficient",
-                "Security can be ensured without compromising user experience",
-                "Management is easier than signed URLs"
-            ],
-            "pros": [
-                "Multiple file support",
-                "Efficient management",
-                "Good UX"
-            ],
-            "cons": [
-                "Cookie limitations",
-                "Browser dependency",
-                "Security configuration"
-            ]
-        }
-    },
-    "Field-Level Encryption": {
-        "name": "Field-Level Encryption",
-        "description": "CloudFront encryption feature that encrypts only specific fields to achieve end-to-end data protection.",
-        "usability": {
-            "reviews": [
-                "Encrypting only sensitive fields is efficient",
-                "Performance impact is also minimal",
-                "Compliance requirements have been met"
-            ],
-            "pros": [
-                "Selective encryption",
-                "High security",
-                "Performance optimization"
-            ],
-            "cons": [
-                "Configuration complexity",
-                "Limited field support",
-                "Debugging difficulties"
-            ]
-        }
-    },
-    "Geo Restriction": {
-        "name": "Geo Restriction",
-        "description": "CloudFront geographic access control feature that allows or denies access from specific countries or regions.",
-        "usability": {
-            "reviews": [
-                "Regional content control is easy to implement",
-                "Compliance requirements response has become easier",
-                "Also effective for preventing unauthorized access"
-            ],
-            "pros": [
-                "Regional control",
-                "Compliance support",
-                "Security improvement"
-            ],
-            "cons": [
-                "IP location accuracy",
-                "VPN circumvention",
-                "Management complexity"
-            ]
-        }
-    },
-    "Throttling Limits": {
-        "name": "Throttling Limits",
-        "description": "API Gateway rate limiting feature that limits the number of API requests to protect systems and ensure fair usage.",
-        "usability": {
-            "reviews": [
-                "API overload prevention enables stable operation",
-                "Systems can be protected from malicious requests",
-                "Fairness among users can also be maintained"
-            ],
-            "pros": [
-                "System protection",
-                "Fair usage",
-                "Cost control"
-            ],
-            "cons": [
-                "Impact on legitimate users",
-                "Configuration adjustments",
-                "Monitoring requirements"
-            ]
-        }
-    },
-    "Lambda Non-Proxy Integration": {
-        "name": "Lambda Non-Proxy Integration",
-        "description": "API Gateway and Lambda integration method that allows detailed control of request/response transformation through custom integration.",
-        "usability": {
-            "reviews": [
-                "Request/response transformation can be controlled in detail",
-                "Existing Lambda functions could be integrated without changes",
-                "Error handling can also be configured flexibly"
-            ],
-            "pros": [
-                "Flexible transformation control",
-                "Existing function utilization",
-                "Detailed error control"
-            ],
-            "cons": [
-                "Configuration complexity",
-                "Debugging difficulties",
-                "Maintenance overhead"
-            ]
-        }
-    },
-    "VPC Link": {
-        "name": "VPC Link",
-        "description": "Connection from API Gateway to VPC resources that enables secure API exposure of services within private networks.",
-        "usability": {
-            "reviews": [
-                "VPC services can be safely exposed as APIs",
-                "Can be published while maintaining network isolation with confidence",
-                "Utilization of existing private services has become easier"
-            ],
-            "pros": [
-                "Secure connection",
-                "Network isolation",
-                "Existing service utilization"
-            ],
-            "cons": [
-                "Configuration complexity",
-                "Performance impact",
-                "Additional costs"
-            ]
-        }
-    },
-    "Usage Plan": {
-        "name": "Usage Plan",
-        "description": "API Gateway usage limit configuration that sets throttling limits and quotas per API key.",
-        "usability": {
-            "reviews": [
-                "Limits can be set per API user, making management easier",
-                "Implementation of pay-per-use models has become simpler",
-                "Also effective for preventing unauthorized usage"
-            ],
-            "pros": [
-                "Per-user limits",
-                "Monetization support",
-                "Unauthorized usage prevention"
-            ],
-            "cons": [
-                "Management complexity",
-                "Monitoring requirements",
-                "User experience impact"
-            ]
-        }
-    },
-    "API Gateway Stage": {
-        "name": "API Gateway Stage",
-        "description": "API Gateway deployment environment unit that manages APIs by separating environments like development, testing, and production.",
-        "usability": {
-            "reviews": [
-                "API management per environment has become more organized",
-                "Staged deployment can be executed safely",
-                "Configuration differences can also be managed clearly"
-            ],
-            "pros": [
-                "Environment separation",
-                "Staged deployment",
-                "Configuration management"
-            ],
-            "cons": [
-                "Management complexity",
-                "Configuration synchronization",
-                "Cost increase"
-            ]
-        }
-    },
-    "Canary Release": {
-        "name": "Canary Release",
-        "description": "Staged deployment method that applies new versions to only a portion of traffic to minimize risks.",
-        "usability": {
-            "reviews": [
-                "New feature release risks have been significantly reduced",
-                "Even if there are problems, the impact scope can be limited with confidence",
-                "User feedback can be collected in stages"
-            ],
-            "pros": [
-                "Risk reduction",
-                "Staged validation",
-                "Quick rollback"
-            ],
-            "cons": [
-                "Configuration complexity",
-                "Monitoring requirements",
-                "Management costs"
-            ]
-        }
-    },
-    "Enhanced Monitoring": {
-        "name": "Enhanced Monitoring",
-        "description": "RDS detailed monitoring feature that monitors database instance OS-level metrics in real-time.",
-        "usability": {
-            "reviews": [
-                "Detailed database status can be grasped, which is helpful",
-                "Performance problem cause identification has become faster",
-                "Real-time monitoring enables quick response"
-            ],
-            "pros": [
-                "Detailed monitoring",
-                "Real-time",
-                "Problem identification support"
-            ],
-            "cons": [
-                "Additional costs",
-                "Increased data volume",
-                "Analysis complexity"
-            ]
-        }
-    },
-    "CloudWatch Agent": {
-        "name": "CloudWatch Agent",
-        "description": "System metrics collection agent that collects custom metrics from EC2 instances and on-premises servers.",
-        "usability": {
-            "reviews": [
-                "Custom metrics collection has become easier",
-                "Application-specific monitoring items can also be configured",
-                "Integrated monitoring environment can be built conveniently"
-            ],
-            "pros": [
-                "Custom metrics",
-                "Integrated monitoring",
-                "Flexible configuration"
-            ],
-            "cons": [
-                "Agent management",
-                "Configuration complexity",
-                "Resource consumption"
-            ]
-        }
-    },
-    "CloudWatch Dashboard": {
-        "name": "CloudWatch Dashboard",
-        "description": "Metrics visualization dashboard that provides customizable monitoring screens for viewing multiple metrics on one screen.",
-        "usability": {
-            "reviews": [
-                "Important metrics can be checked on one screen efficiently",
-                "Team-wide status sharing has become easier",
-                "Customization can also be done intuitively"
-            ],
-            "pros": [
-                "Centralized visualization",
-                "Customizable",
-                "Team sharing"
-            ],
-            "cons": [
-                "Creation effort",
-                "Display limitations",
-                "Real-time limitations"
-            ]
-        }
-    },
-    "CloudWatch Insights": {
-        "name": "CloudWatch Insights",
-        "description": "Log analysis service that enables interactive querying and analysis of CloudWatch Logs data.",
-        "usability": {
-            "reviews": [
-                "Log analysis can be done intuitively, making problem solving faster",
-                "Complex queries can also be executed easily",
-                "Visualization features are also comprehensive and easy to understand"
-            ],
-            "pros": [
-                "Interactive analysis",
-                "Powerful queries",
-                "Visualization features"
-            ],
-            "cons": [
-                "Query costs",
-                "Learning curve",
-                "Performance limitations"
-            ]
-        }
-    },
-    "CloudWatch Container Insights": {
-        "name": "CloudWatch Container Insights",
-        "description": "Container monitoring feature that automatically collects and monitors container metrics and logs for ECS, EKS, and Fargate.",
-        "usability": {
-            "reviews": [
-                "Container monitoring automation has made operations easier",
-                "Microservice status visualization is helpful",
-                "Performance problem identification has become faster"
-            ],
-            "pros": [
-                "Automated monitoring",
-                "Container-specific",
-                "Integrated visualization"
-            ],
-            "cons": [
-                "Additional costs",
-                "Configuration complexity",
-                "Increased data volume"
-            ]
-        }
-    },
-    "CloudWatch Alarm": {
-        "name": "CloudWatch Alarm",
-        "description": "Metrics monitoring alarm that automatically executes notifications or actions when specified conditions are met.",
-        "usability": {
-            "reviews": [
-                "System anomalies can be detected early with confidence",
-                "Automatic recovery actions can also be configured conveniently",
-                "Adjustments to prevent alert fatigue are also possible"
-            ],
-            "pros": [
-                "Early detection",
-                "Automatic actions",
-                "Flexible condition settings"
-            ],
-            "cons": [
-                "False positive risks",
-                "Configuration adjustments",
-                "Alert fatigue"
-            ]
-        }
-    },
-    "Subscription Filter": {
-        "name": "Subscription Filter",
-        "description": "CloudWatch Logs log streaming feature that transfers log data to other services in real-time.",
-        "usability": {
-            "reviews": [
-                "Real-time log data processing is convenient",
-                "Integration with external systems has become easier",
-                "Log analysis automation has been realized"
-            ],
-            "pros": [
-                "Real-time transfer",
-                "External integration",
-                "Automation support"
-            ],
-            "cons": [
-                "Transfer costs",
-                "Filter limitations",
-                "Potential delays"
-            ]
-        }
-    },
-    "Automated Backup": {
-        "name": "Automated Backup",
-        "description": "RDS automatic backup feature that automatically executes regular database backups and enables point-in-time recovery.",
-        "usability": {
-            "reviews": [
-                "Backup work can be completely automated with confidence",
-                "Recovery to any point in time is reassuring",
-                "Operational load has been significantly reduced"
-            ],
-            "pros": [
-                "Complete automation",
-                "Point-in-time recovery",
-                "Reduced operational load"
-            ],
-            "cons": [
-                "Storage costs",
-                "Recovery time",
-                "Retention period limitations"
-            ]
-        }
-    },
-    "Failover": {
-        "name": "Failover",
-        "description": "RDS high availability feature that automatically switches to standby instances when primary instance failures occur.",
-        "usability": {
-            "reviews": [
-                "Automatic switching during database failures has improved availability",
-                "Downtime can be minimized, which is helpful",
-                "Impact on applications is also minimal"
-            ],
-            "pros": [
-                "High availability",
-                "Automatic switching",
-                "Minimal downtime"
-            ],
-            "cons": [
-                "Additional costs",
-                "Switching time",
-                "Data synchronization delays"
-            ]
-        }
-    },
-    "RDS Proxy": {
-        "name": "RDS Proxy",
-        "description": "Database connection pool management service that optimizes connections between applications and RDS, improving availability and security.",
-        "usability": {
-            "reviews": [
-                "Database connection management can be automated conveniently",
-                "No longer need to worry about connection number limitations",
-                "Recovery during failover has also become faster"
-            ],
-            "pros": [
-                "Connection optimization",
-                "High availability",
-                "Security improvement"
-            ],
-            "cons": [
-                "Additional costs",
-                "Increased latency",
-                "Configuration complexity"
-            ]
-        }
-    },
-    "Sharding": {
-        "name": "Sharding",
-        "description": "Database horizontal partitioning technique that distributes large amounts of data across multiple database instances to improve performance and scalability.",
-        "usability": {
-            "reviews": [
-                "Large data processing performance has improved dramatically",
-                "Scalability issues have been resolved",
-                "Load distribution effects are also tangible"
-            ],
-            "pros": [
-                "High performance",
-                "Scalability",
-                "Load distribution"
-            ],
-            "cons": [
-                "Design complexity",
-                "Operational difficulties",
-                "Transaction limitations"
-            ]
-        }
-    },
-    "RDS Custom": {
-        "name": "Amazon RDS Custom",
-        "description": "Customizable managed database that provides administrator access to OS and database settings in RDS service.",
-        "usability": {
-            "reviews": [
-                "Fine database configuration can be done to meet requirements",
-                "Managed service convenience can also be maintained",
-                "Existing application migration was smooth"
-            ],
-            "pros": [
-                "High customizability",
-                "Administrator access",
-                "Existing application support"
-            ],
-            "cons": [
-                "Increased management responsibility",
-                "High cost",
-                "Complex operations"
-            ]
-        }
-    },
-    "Encryption": {
-        "name": "Encryption",
-        "description": "Data encryption feature that protects data with encryption at rest and in transit to meet compliance requirements.",
-        "usability": {
-            "reviews": [
-                "Data encryption can be easily configured with confidence",
-                "Compliance requirements have been met",
-                "Performance impact is also minimal"
-            ],
-            "pros": [
-                "Data protection",
-                "Compliance support",
-                "Transparent encryption"
-            ],
-            "cons": [
-                "Key management",
-                "Performance impact",
-                "Decryption complexity"
-            ]
-        }
-    },
-    "DynamoDB Data Storage": {
-        "name": "DynamoDB Data Storage",
-        "description": "DynamoDB data storage feature that provides fast and scalable data storage as a NoSQL database.",
-        "usability": {
-            "reviews": [
-                "Large data storage and retrieval can be done at high speed",
-                "Can be used without worrying about scaling conveniently",
-                "Availability is also very high and reliable"
-            ],
-            "pros": [
-                "High-speed access",
-                "Auto-scaling",
-                "High availability"
-            ],
-            "cons": [
-                "Query limitations",
-                "Data model design",
-                "Cost management"
-            ]
-        }
-    },
-    "Point-in-Time Recovery": {
-        "name": "Point-in-Time Recovery",
-        "description": "DynamoDB continuous backup feature that can restore tables to any point in time within the past 35 days.",
-        "usability": {
-            "reviews": [
-                "Even if data is accidentally deleted, recovery can be done with confidence",
-                "Continuous backup has reduced operational load",
-                "Recovery operations are also simple and helpful"
-            ],
-            "pros": [
-                "Continuous backup",
-                "Flexible recovery",
-                "Reduced operational load"
-            ],
-            "cons": [
-                "Additional costs",
-                "Recovery time",
-                "Retention period limitations"
-            ]
-        }
-    },
-    "Read Capacity Unit": {
-        "name": "Read Capacity Unit (RCU)",
-        "description": "DynamoDB read performance unit that represents the capacity of read operations that can be executed per second.",
-        "usability": {
-            "reviews": [
-                "Read performance calculation has become clearer",
-                "Can be adjusted according to required performance conveniently",
-                "Cost management has also become easier"
-            ],
-            "pros": [
-                "Clear performance indicators",
-                "Flexible adjustment",
-                "Cost visibility"
-            ],
-            "cons": [
-                "Capacity calculation complexity",
-                "Throttling risks",
-                "Cost prediction difficulties"
-            ]
-        }
-    },
-    "DynamoDB Transactions": {
-        "name": "DynamoDB Transactions",
-        "description": "DynamoDB ACID-compliant transaction feature that can execute operations on multiple items atomically.",
-        "usability": {
-            "reviews": [
-                "Complex operations can be performed while maintaining data consistency",
-                "Transactions can be used even with NoSQL with confidence",
-                "Application logic has been simplified"
-            ],
-            "pros": [
-                "Data consistency",
-                "ACID compliance",
-                "Complex operation support"
-            ],
-            "cons": [
-                "Performance impact",
-                "Cost increase",
-                "Limitations"
-            ]
-        }
-    },
-    "S3 Storage Class Analysis": {
-        "name": "S3 Storage Class Analysis",
-        "description": "S3 storage usage pattern analysis feature that analyzes access patterns and recommends optimal storage classes.",
-        "usability": {
-            "reviews": [
-                "Storage cost optimization can be done, which is helpful",
-                "Access patterns are visualized and easy to understand",
-                "Automatic recommendations make decisions easier"
-            ],
-            "pros": [
-                "Cost optimization",
-                "Automatic analysis",
-                "Recommendation features"
-            ],
-            "cons": [
-                "Analysis period required",
-                "Recommendation accuracy",
-                "Migration costs"
-            ]
-        }
-    },
-    "S3 Requester Pays": {
-        "name": "S3 Requester Pays",
-        "description": "S3 cost transfer feature that makes requesters bear transfer costs when accessing data.",
-        "usability": {
-            "reviews": [
-                "Cost burden for large data distribution has been reduced",
-                "Fair usage can be achieved with user burden",
-                "Configuration is also simple and easy to introduce"
-            ],
-            "pros": [
-                "Cost transfer",
-                "Fair usage",
-                "Simple configuration"
-            ],
-            "cons": [
-                "Impact on users",
-                "Management complexity",
-                "Access restrictions"
-            ]
-        }
-    },
-    "S3 Event Notification": {
-        "name": "S3 Event Notification",
-        "description": "S3 event notification feature that notifies other AWS services of events such as object creation and deletion.",
-        "usability": {
-            "reviews": [
-                "Automatic processing during file upload has been realized",
-                "Real-time integration processing is convenient",
-                "Various notification destinations are supported flexibly"
-            ],
-            "pros": [
-                "Real-time notifications",
-                "Automatic processing integration",
-                "Various notification destinations"
-            ],
-            "cons": [
-                "Notification costs",
-                "Duplicate notification risks",
-                "Configuration complexity"
-            ]
-        }
-    },
-    "Glacier": {
-        "name": "Amazon S3 Glacier",
-        "description": "Long-term archive storage that can store data at low cost for long periods, with longer retrieval times but very affordable.",
-        "usability": {
-            "reviews": [
-                "Long-term storage data costs have been significantly reduced",
-                "Compliance requirements can also be met with confidence",
-                "Automatic lifecycle management is also convenient"
-            ],
-            "pros": [
-                "Ultra-low cost",
-                "Long-term storage",
-                "High durability"
-            ],
-            "cons": [
-                "Retrieval time",
-                "Retrieval costs",
-                "Minimum storage duration"
-            ]
-        }
-    },
-    "S3 Access Analyzer": {
-        "name": "S3 Access Analyzer",
-        "description": "S3 access analysis tool that analyzes bucket access permissions and detects unintended external access.",
-        "usability": {
-            "reviews": [
-                "Unintended public access can be detected with confidence",
-                "Security risk visualization has been achieved",
-                "Regular audit work has been automated"
-            ],
-            "pros": [
-                "Security analysis",
-                "Risk detection",
-                "Automated auditing"
-            ],
-            "cons": [
-                "Analysis accuracy",
-                "False positives",
-                "Response effort"
-            ]
-        }
-    },
-    "IAM Database Authentication": {
-        "name": "IAM Database Authentication",
-        "description": "RDS IAM authentication feature that uses IAM credentials for database access, eliminating password management.",
-        "usability": {
-            "reviews": [
-                "Database password management is no longer needed, which is convenient",
-                "Fine control can be done with IAM policies conveniently",
-                "Security has also improved"
-            ],
-            "pros": [
-                "No password management",
-                "IAM integration",
-                "Security improvement"
-            ],
-            "cons": [
-                "Limited database support",
-                "Configuration complexity",
-                "Performance impact"
-            ]
-        }
-    },
-    "Trust Policy": {
-        "name": "Trust Policy",
-        "description": "IAM role trust relationship configuration that defines which entities can assume that role.",
-        "usability": {
-            "reviews": [
-                "Role usage permissions can be controlled in detail safely",
-                "Cross-account access configuration is also clear",
-                "Security policy implementation has become easier"
-            ],
-            "pros": [
-                "Fine permission control",
-                "Cross-account support",
-                "Security enhancement"
-            ],
-            "cons": [
-                "Configuration complexity",
-                "Understanding difficulties",
-                "Debugging challenges"
-            ]
-        }
-    },
-    "AWS IAM Identity Center": {
-        "name": "AWS IAM Identity Center",
-        "description": "Integrated identity management service that provides single sign-on to multiple AWS accounts and applications.",
-        "usability": {
-            "reviews": [
-                "Access management to multiple accounts has been centralized",
-                "Single sign-on has improved usability",
-                "Permission management has also become efficient"
-            ],
-            "pros": [
-                "Centralized management",
-                "Single sign-on",
-                "Efficient permission management"
-            ],
-            "cons": [
-                "Initial setup complexity",
-                "Migration costs",
-                "Feature limitations"
-            ]
-        }
-    },
-    "Instance Profile": {
-        "name": "Instance Profile",
-        "description": "IAM role assignment feature for EC2 instances that provides credentials for instances to access AWS services.",
-        "usability": {
-            "reviews": [
-                "EC2 can safely access AWS services",
-                "No longer need to hardcode credentials",
-                "Security best practices have been realized"
-            ],
-            "pros": [
-                "Secure access",
-                "No credential management",
-                "Security improvement"
-            ],
-            "cons": [
-                "Configuration complexity",
-                "Importance of permission design",
-                "Debugging difficulties"
-            ]
-        }
-    },
-    "DNS Hostname": {
-        "name": "DNS Hostname",
-        "description": "VPC DNS resolution feature that assigns public DNS hostnames to instances to simplify access.",
-        "usability": {
-            "reviews": [
-                "No longer need to remember IP addresses, which is convenient",
-                "Can access stably even with dynamic IP addresses",
-                "DNS configuration is automated and management is easy"
-            ],
-            "pros": [
-                "Access simplification",
-                "Dynamic IP support",
-                "Automated DNS management"
-            ],
-            "cons": [
-                "DNS dependency",
-                "Resolution delays",
-                "Configuration limitations"
-            ]
-        }
-    },
-    "Route 53 Failover Routing": {
-        "name": "Route 53 Failover Routing",
-        "description": "Route 53 automatic failover feature that automatically transfers traffic to secondary resources when primary resource failures occur.",
-        "usability": {
-            "reviews": [
-                "Automatic switching during service failures has improved availability",
-                "Downtime can be minimized, which is helpful",
-                "Configuration was also simpler than expected"
-            ],
-            "pros": [
-                "High availability",
-                "Automatic switching",
-                "Downtime minimization"
-            ],
-            "cons": [
-                "Health check costs",
-                "Switching time",
-                "Configuration complexity"
-            ]
-        }
-    },
-    "Multivalue Answer Routing": {
-        "name": "Multivalue Answer Routing",
-        "description": "Route 53 multiple value response feature that randomly returns IP addresses of multiple healthy resources in response to DNS queries.",
-        "usability": {
-            "reviews": [
-                "Load balancing can be easily realized conveniently",
-                "Automatic exclusion during failures also functions with confidence",
-                "High availability has been realized with simple configuration"
-            ],
-            "pros": [
-                "Simple load balancing",
-                "Automatic failure exclusion",
-                "High availability"
-            ],
-            "cons": [
-                "Control limitations",
-                "Health check required",
-                "DNS cache impact"
-            ]
-        }
-    },
-    "Public Hosted Zone": {
-        "name": "Public Hosted Zone",
-        "description": "Route 53 public DNS zone that manages DNS records for domains accessible from the internet.",
-        "usability": {
-            "reviews": [
-                "Domain DNS management can be centralized conveniently",
-                "Global DNS resolution is fast and stable",
-                "Integration with other AWS services is also smooth"
-            ],
-            "pros": [
-                "Centralized DNS management",
-                "Fast resolution",
-                "AWS integration"
-            ],
-            "cons": [
-                "Query charges",
-                "Configuration error risks",
-                "DNS propagation time"
-            ]
-        }
-    },
-    "Lambda 15-minute Timeout": {
-        "name": "Lambda 15-minute Timeout",
-        "description": "Lambda maximum execution time limit where function execution time can be set up to 15 minutes maximum, automatically terminating if exceeded.",
-        "usability": {
-            "reviews": [
-                "Long-running processes can now be supported, which is helpful",
-                "Batch processing implementation options have expanded",
-                "Timeout settings can prevent unexpected long executions"
-            ],
-            "pros": [
-                "Long-running process support",
-                "Flexible execution time",
-                "Cost control"
-            ],
-            "cons": [
-                "Execution time limitations",
-                "Cost increase risks",
-                "Design considerations required"
-            ]
-        }
-    },
-    "Lambda Layers": {
-        "name": "AWS Lambda Layers",
-        "description": "Lambda function shared component feature that allows libraries and custom runtimes to be shared across multiple functions.",
-        "usability": {
-            "reviews": [
-                "Common library management has been streamlined",
-                "Deployment package size can also be reduced conveniently",
-                "Version management has also become easier"
-            ],
-            "pros": [
-                "Code sharing",
-                "Efficient management",
-                "Deployment optimization"
-            ],
-            "cons": [
-                "Dependency management",
-                "Version compatibility",
-                "Size limitations"
-            ]
-        }
-    },
-    "Lambda VPC Access": {
-        "name": "Lambda VPC Access",
-        "description": "Lambda access feature to VPC resources that enables access to resources within private networks.",
-        "usability": {
-            "reviews": [
-                "Private databases can be accessed conveniently",
-                "Internal resources can be used while maintaining security",
-                "Network configuration was also simpler than expected"
-            ],
-            "pros": [
-                "Private access",
-                "Security assurance",
-                "Internal resource utilization"
-            ],
-            "cons": [
-                "Increased cold starts",
-                "Network configuration required",
-                "Performance impact"
-            ]
-        }
-    },
-    "Auto Scaling": {
-        "name": "Amazon EC2 Auto Scaling",
-        "description": "EC2 instance automatic scaling feature that automatically increases or decreases the number of instances based on demand.",
-        "usability": {
-            "reviews": [
-                "Automatic response to traffic fluctuations has made operations easier",
-                "Cost optimization can also be done automatically, which is helpful",
-                "Availability has also improved with confidence"
-            ],
-            "pros": [
-                "Automatic scaling",
-                "Cost optimization",
-                "High availability"
-            ],
-            "cons": [
-                "Configuration complexity",
-                "Scaling delays",
-                "Unexpected costs"
-            ]
-        }
-    },
-    "Auto Scaling Health Check": {
-        "name": "Auto Scaling Health Check",
-        "description": "Auto Scaling health monitoring feature that monitors instance health and automatically replaces them when abnormal.",
-        "usability": {
-            "reviews": [
-                "Automatic replacement of abnormal instances has improved availability",
-                "Manual monitoring work is no longer needed, which is convenient",
-                "Service stability has improved significantly"
-            ],
-            "pros": [
-                "Automatic recovery",
-                "High availability",
-                "Reduced operational load"
-            ],
-            "cons": [
-                "False positive risks",
-                "Replacement time",
-                "Configuration adjustments required"
-            ]
-        }
-    },
-    "Scale Out": {
-        "name": "Scale Out",
-        "description": "Horizontal scaling technique that increases the number of servers to distribute load for improved processing capacity.",
-        "usability": {
-            "reviews": [
-                "Performance improvement during high load has been realized",
-                "Single points of failure can be avoided with confidence",
-                "Flexible response according to demand is possible"
-            ],
-            "pros": [
-                "High scalability",
-                "Fault tolerance",
-                "Flexible response"
-            ],
-            "cons": [
-                "Architecture complexity",
-                "Data consistency",
-                "Management costs"
-            ]
-        }
-    },
-    "ElastiCache for Redis": {
-        "name": "ElastiCache for Redis",
-        "description": "Managed Redis service used as a high-performance in-memory data store for caching and session management.",
-        "usability": {
-            "reviews": [
-                "Application response speed has improved dramatically",
-                "Session management also operates stably",
-                "High availability has also been realized with Redis Cluster"
-            ],
-            "pros": [
-                "High-speed access",
-                "High availability",
-                "Rich features"
-            ],
-            "cons": [
-                "Memory costs",
-                "Data persistence",
-                "Complex configuration"
-            ]
-        }
-    },
-    "Write-Through Caching": {
-        "name": "Write-Through Caching",
-        "description": "Cache strategy that writes to both cache and database simultaneously when writing data.",
-        "usability": {
-            "reviews": [
-                "Data consistency is maintained with confidence",
-                "Cache misses are few and performance is stable",
-                "Implementation is also simple and easy to understand"
-            ],
-            "pros": [
-                "Data consistency",
-                "Improved cache hit rate",
-                "Simple implementation"
-            ],
-            "cons": [
-                "Write delays",
-                "Unnecessary data caching",
-                "Increased memory usage"
-            ]
-        }
-    },
-    "CloudFormation StackSets": {
-        "name": "CloudFormation StackSets",
-        "description": "Bulk deployment feature to multiple accounts and regions that deploys stacks to multiple locations from a single template.",
-        "usability": {
-            "reviews": [
-                "Bulk deployment to multiple accounts is efficient",
-                "Unified environment construction can be done and is easy to manage",
-                "Also helpful for governance realization"
-            ],
-            "pros": [
-                "Bulk deployment",
-                "Unified environment construction",
-                "Governance enhancement"
-            ],
-            "cons": [
-                "Permission configuration complexity",
-                "Failure impact scope",
-                "Rollback difficulties"
-            ]
-        }
-    },
-    "CloudFormation Change Sets": {
-        "name": "CloudFormation Change Sets",
-        "description": "CloudFormation change preview feature that allows confirmation of change contents before stack updates.",
-        "usability": {
-            "reviews": [
-                "Change contents can be confirmed in advance with confidence",
-                "Unexpected changes can be prevented, which is helpful",
-                "Team change reviews have also become efficient"
-            ],
-            "pros": [
-                "Change preview",
-                "Risk reduction",
-                "Review efficiency"
-            ],
-            "cons": [
-                "Increased procedures",
-                "Preview accuracy",
-                "Execution time differences"
-            ]
-        }
-    },
-    "CloudFormation Drift Detection": {
-        "name": "CloudFormation Drift Detection",
-        "description": "CloudFormation configuration difference detection feature that detects differences between templates and actual resource configurations.",
-        "usability": {
-            "reviews": [
-                "Configuration differences due to manual changes can be detected, which is helpful",
-                "Infrastructure state management can now be done accurately",
-                "Can also be utilized for compliance audits"
-            ],
-            "pros": [
-                "Configuration difference detection",
-                "State management",
-                "Compliance support"
-            ],
-            "cons": [
-                "Detection accuracy",
-                "Limited resource support",
-                "Correction effort"
-            ]
-        }
+  "FloatingIP": {
+    "name": "Floating IP (Elastic IP)",
+    "description": "A static IPv4 address designed for dynamic cloud computing. It can be associated with any EC2 instance in your account, allowing you to maintain communication by quickly remapping the IP address to another instance in the event of an instance failure.",
+    "usability": {
+      "reviews": [
+        "It's really convenient that the IP address doesn't change when replacing instances.",
+        "It helps that system failover is quick in the event of a failure.",
+        "I feel it's an essential feature for integrating with external services that require a fixed IP."
+      ],
+      "pros": [
+        "Provides a static IP address",
+        "Rapid failover",
+        "Independence from the instance"
+      ],
+      "cons": [
+        "Incurs charges if not associated with an instance",
+        "Can potentially complicate management"
+      ]
     }
+  },
+  "ElasticFabricAdapter": {
+    "name": "Elastic Fabric Adapter (EFA)",
+    "description": "A network interface for EC2 instances that provides lower and more consistent latency and higher throughput than traditional TCP transport, ideal for workloads like High-Performance Computing (HPC) and machine learning.",
+    "usability": {
+      "reviews": [
+        "The performance of our HPC workloads has improved dramatically.",
+        "I'm satisfied that the communication latency for our MPI applications has been significantly reduced.",
+        "The configuration is a bit specialized, but it's well worth it."
+      ],
+      "pros": [
+        "Low latency",
+        "High throughput",
+        "Performance improvement via OS-bypass feature"
+      ],
+      "cons": [
+        "Limited to specific instance types",
+        "Aimed at specific applications (HPC, ML)",
+        "Requires specialized knowledge for configuration"
+      ]
+    }
+  },
+  "AWSNitroEnclaves": {
+    "name": "AWS Nitro Enclaves",
+    "description": "An EC2 feature that allows you to create isolated computing environments (enclaves) to protect and securely process highly sensitive data. The enclave has no persistent storage or network access, achieving a high level of security.",
+    "usability": {
+      "reviews": [
+        "It provides a great sense of security to be able to completely isolate processes that handle sensitive data.",
+        "It's powerful from a security perspective that even regular instance administrators cannot access it.",
+        "Implementation requires changes on the application side, so a planned adoption is necessary."
+      ],
+      "pros": [
+        "Strong separation and isolation",
+        "Enhanced protection for sensitive data",
+        "Attestation (verification) feature"
+      ],
+      "cons": [
+        "No external communication or persistent storage",
+        "High implementation difficulty",
+        "Difficult to debug"
+      ]
+    }
+  },
+  "MaxAgeDirective": {
+    "name": "Cache-Control: max-age",
+    "description": "A directive in the HTTP response header that specifies the maximum amount of time in seconds that a resource is considered fresh. It is used in services like CloudFront and S3 to control browser and CDN caching behavior.",
+    "usability": {
+      "reviews": [
+        "Just by setting max-age, the site's display speed noticeably improved.",
+        "It's convenient to be able to finely control the cache duration.",
+        "Fewer requests to the origin led to cost savings."
+      ],
+      "pros": [
+        "Improved website performance",
+        "Reduced load on the origin server",
+        "Cost reduction"
+      ],
+      "cons": [
+        "Content is not updated until the cache expires",
+        "Difficult to set an appropriate duration",
+        "Not suitable for dynamic content"
+      ]
+    }
+  },
+  "ExpiresHeader": {
+    "name": "Expires Header",
+    "description": "An HTTP response header that specifies the date/time after which the response is considered stale. Like max-age, it is used for cache control, but the max-age directive often takes precedence.",
+    "usability": {
+      "reviews": [
+        "I use it as a cache setting that is also compatible with older browsers.",
+        "By combining it with a CDN, we were able to streamline content delivery.",
+        "It's easy to understand because you can specify a concrete date and time."
+      ],
+      "pros": [
+        "Specification of cache duration",
+        "Wide browser compatibility",
+        "Performance improvement"
+      ],
+      "cons": [
+        "max-age is often prioritized",
+        "Can be affected by clock skew between server and client"
+      ]
+    }
+  },
+  "SignedUrlsOrCookies": {
+    "name": "Signed URLs and Signed Cookies",
+    "description": "A mechanism to control access to private content in CloudFront or S3. Signed URLs grant temporary access to a specific file, while signed cookies grant temporary access to multiple restricted files.",
+    "usability": {
+      "reviews": [
+        "Signed URLs are useful for delivering content exclusive to members.",
+        "With signed cookies, we can securely stream videos as well.",
+        "It was a bit of a hassle to implement the URL generation logic into our application."
+      ],
+      "pros": [
+        "Protection of private content",
+        "Temporary access permission",
+        "Flexible access policies"
+      ],
+      "cons": [
+        "Complexity of URL/cookie generation and management",
+        "Requires management of expiration dates",
+        "Risk of unintentional exposure due to misconfiguration"
+      ]
+    }
+  },
+  "FieldLevelEncryption": {
+    "name": "Field-Level Encryption",
+    "description": "A CloudFront feature that allows you to selectively encrypt specific data submitted by users (like credit card numbers) and securely transfer it to your backend servers. The data is encrypted at the edge and remains protected throughout your application.",
+    "usability": {
+      "reviews": [
+        "It's very convenient to be able to encrypt only a part of the POST data.",
+        "We find it invaluable for applications with strict security requirements.",
+        "The public key setup and field mapping felt a bit complex."
+      ],
+      "pros": [
+        "Strong protection of sensitive data",
+        "Simplification of end-to-end encryption",
+        "Helps meet compliance requirements"
+      ],
+      "cons": [
+        "Complex configuration",
+        "Slight impact on performance",
+        "Can make debugging more difficult"
+      ]
+    }
+  },
+  "GeographicRestrictions": {
+    "name": "Geographic Restrictions (Geo-blocking)",
+    "description": "A CloudFront feature that allows you to permit or block users in specific geographic locations (countries) from accessing content. It is used to control distribution regions based on content licensing agreements.",
+    "usability": {
+      "reviews": [
+        "We were able to easily block access from specific countries to comply with our content license agreements.",
+        "It's great that you can choose between a whitelist or a blacklist approach.",
+        "The setup was easy, completed in just a few clicks from the web console."
+      ],
+      "pros": [
+        "Protection of content licenses",
+        "Easy access control",
+        "Improved security"
+      ],
+      "cons": [
+        "Can be bypassed using VPNs",
+        "Depends on the accuracy of country detection",
+        "Possibility of mistakenly blocking legitimate users"
+      ]
+    }
+  },
+  "ThrottlingLimits": {
+    "name": "Throttling Limits",
+    "description": "A feature in API Gateway that limits the request rate (steady-state and burst rates) for an API. This helps prevent backend services from being overwhelmed by an excessive number of requests.",
+    "usability": {
+      "reviews": [
+        "We can limit API usage, which allows our backend to operate stably.",
+        "It's useful for preventing excessive requests from specific clients.",
+        "When combined with usage plans, it allows for more flexible control."
+      ],
+      "pros": [
+        "Protection of backend systems",
+        "Improved API stability",
+        "Prevention of abuse and misuse"
+      ],
+      "cons": [
+        "Difficult to set appropriate thresholds",
+        "Risk of mistakenly throttling legitimate traffic"
+      ]
+    }
+  },
+  "LambdaCustomIntegration": {
+    "name": "Lambda Custom (Non-Proxy) Integration",
+    "description": "A type of API Gateway integration where you have detailed control over how incoming requests are mapped to the Lambda function and how the function's response is mapped back to the client. Used when request/response transformation is needed.",
+    "usability": {
+      "reviews": [
+        "This is an essential feature when you want to finely transform requests and responses.",
+        "It was convenient to be able to freely rewrite headers and format the body.",
+        "I was confused at first because there are more settings compared to proxy integration."
+      ],
+      "pros": [
+        "High flexibility and control",
+        "Enables request/response transformation",
+        "Easier integration with legacy systems"
+      ],
+      "cons": [
+        "Complex configuration",
+        "Learning curve for mapping templates (VTL)",
+        "More effort than proxy integration"
+      ]
+    }
+  },
+  "VPCLink": {
+    "name": "VPC Link",
+    "description": "A feature of API Gateway that allows an API to connect to resources within a private VPC (e.g., EC2 instances behind an NLB) without traversing the public internet.",
+    "usability": {
+      "reviews": [
+        "It's helpful for securely exposing resources within our VPC to the outside.",
+        "It's great that it can integrate directly with ALBs and NLBs in private subnets.",
+        "You need to be aware that the setup differs for REST APIs and HTTP APIs."
+      ],
+      "pros": [
+        "Secure access to private resources",
+        "Simplification of network architecture",
+        "Exposes services in a VPC as APIs"
+      ],
+      "cons": [
+        "Slightly complex setup",
+        "Potential for minor latency increase",
+        "Incurs costs"
+      ]
+    }
+  },
+  "UsagePlans": {
+    "name": "Usage Plans",
+    "description": "A feature of API Gateway that allows you to set throttling limits and request quotas for each client assigned an API key. Used when providing an API as a service.",
+    "usability": {
+      "reviews": [
+        "We were able to easily create different API usage plans for each customer.",
+        "By issuing API keys, it's convenient to visualize who is using how much.",
+        "There are many settings, and it took time to understand their relationship with other features."
+      ],
+      "pros": [
+        "API monetization",
+        "Per-client usage control",
+        "Management of API access"
+      ],
+      "cons": [
+        "Complex configuration",
+        "Requires API key management"
+      ]
+    }
+  },
+  "Stages": {
+    "name": "Stages",
+    "description": "A feature of API Gateway that acts as a logical reference to manage deployments of an API. You can create stages for different environments like 'dev', 'stg', and 'prod', and apply different settings (endpoints, throttling, logging) to each.",
+    "usability": {
+      "reviews": [
+        "It's convenient to easily switch API settings between development and production environments.",
+        "Using stage variables helps absorb differences between environments.",
+        "It took some time to understand the concept of deployments."
+      ],
+      "pros": [
+        "Management of the development lifecycle",
+        "Separation of settings per environment",
+        "Gradual deployments with Canary releases"
+      ],
+      "cons": [
+        "Changes are not reflected if you forget to deploy",
+        "Management becomes complex as the number of stages increases"
+      ]
+    }
+  },
+  "CanaryRelease": {
+    "name": "Canary Release Deployment",
+    "description": "A deployment strategy in API Gateway that gradually shifts traffic to a new API version. For example, you can direct 10% of traffic to the new version, verify there are no issues, and then incrementally increase the percentage.",
+    "usability": {
+      "reviews": [
+        "We were able to safely release a new version while minimizing the impact on the production environment.",
+        "It's reassuring to know we can roll back immediately if a problem occurs.",
+        "The setup takes some effort, but it's well worth it."
+      ],
+      "pros": [
+        "Risk reduction",
+        "Zero-downtime deployments",
+        "Comparative performance testing"
+      ],
+      "cons": [
+        "Complex configuration",
+        "Deployment takes longer",
+        "Requires managing both versions"
+      ]
+    }
+  },
+  "EnhancedMonitoring": {
+    "name": "Enhanced Monitoring",
+    "description": "A feature in services like RDS and EC2 that collects more detailed metrics (e.g., CPU utilization breakdown, process memory usage). It sends OS-level metrics to CloudWatch Logs, helping to identify performance bottlenecks.",
+    "usability": {
+      "reviews": [
+        "It helped us resolve issues faster by identifying which process was causing high CPU usage.",
+        "It's essential for troubleshooting as it provides detailed information not available in standard metrics.",
+        "You need to be mindful of costs as it increases log output."
+      ],
+      "pros": [
+        "Detailed performance analysis",
+        "Faster problem resolution",
+        "OS-level visibility"
+      ],
+      "cons": [
+        "Incurs additional charges",
+        "Consumes CloudWatch Logs capacity"
+      ]
+    }
+  },
+  "CloudWatchAgent": {
+    "name": "CloudWatch Agent",
+    "description": "Software installed on EC2 instances or on-premises servers to send system-level metrics (e.g., memory usage, disk usage) and log files to CloudWatch.",
+    "usability": {
+      "reviews": [
+        "Being able to monitor memory usage was a huge improvement for us.",
+        "We were able to easily centralize our application logs in CloudWatch Logs.",
+        "The configuration file format is unique and took some time to get used to."
+      ],
+      "pros": [
+        "Detailed metric collection (memory, disk, etc.)",
+        "Log file aggregation",
+        "Monitoring of on-premises servers"
+      ],
+      "cons": [
+        "Requires agent installation and configuration",
+        "Complex configuration file syntax"
+      ]
+    }
+  },
+  "CloudWatchDashboards": {
+    "name": "CloudWatch Dashboards",
+    "description": "A feature of CloudWatch that displays metrics and alarms for resources across multiple regions in a single, customizable view. It helps to get an at-a-glance overview of operational status.",
+    "usability": {
+      "reviews": [
+        "Operations became much easier because we can monitor important metrics on a single screen.",
+        "There's a rich variety of graph types, allowing us to create visually intuitive dashboards.",
+        "Thanks to the auto-refresh feature, we can always see the latest status."
+      ],
+      "pros": [
+        "Visualization of operational status",
+        "Customizable views",
+        "Centralized management across multiple regions"
+      ],
+      "cons": [
+        "Widget layout requires a bit of design sense",
+        "Can become cluttered if too many metrics are displayed"
+      ]
+    }
+  },
+  "CloudWatchLogsInsights": {
+    "name": "CloudWatch Logs Insights",
+    "description": "A feature for interactively searching and analyzing log data stored in CloudWatch Logs. Using a purpose-built query language, you can quickly extract and visualize information from large volumes of logs.",
+    "usability": {
+      "reviews": [
+        "I was impressed at how instantly I could find specific error logs from a huge amount of data.",
+        "It's very powerful to be able to aggregate and graph logs using queries.",
+        "There is a bit of a learning curve to master the query language."
+      ],
+      "pros": [
+        "Fast log analysis",
+        "Flexible query capabilities",
+        "Visualization of analysis results"
+      ],
+      "cons": [
+        "Learning curve for the query language",
+        "Charged based on the amount of data scanned"
+      ]
+    }
+  },
+  "CloudWatchContainerInsights": {
+    "name": "CloudWatch Container Insights",
+    "description": "A feature that collects, aggregates, and summarizes metrics and logs from your containerized applications and microservices on ECS, EKS, Fargate, etc. It allows you to monitor performance at the cluster, task, and pod level.",
+    "usability": {
+      "reviews": [
+        "Performance monitoring of our container environment has become much easier.",
+        "You can see at a glance which container is consuming resources.",
+        "We could start using it right away because dashboards are created automatically."
+      ],
+      "pros": [
+        "Visibility into container environments",
+        "Identification of performance issues",
+        "Ease of setup"
+      ],
+      "cons": [
+        "Additional charges for collected custom metrics",
+        "Requires query knowledge for detailed analysis"
+      ]
+    }
+  },
+  "CloudWatchAlarms": {
+    "name": "CloudWatch Alarms",
+    "description": "A feature that monitors a specific metric and, if it crosses a specified threshold for a certain period, automatically triggers actions like sending an SNS notification or stopping/rebooting an EC2 instance.",
+    "usability": {
+      "reviews": [
+        "We've set it up to send a notification when CPU usage goes up, which helps us detect potential issues.",
+        "By integrating with Auto Scaling, we achieved automatic scaling based on load.",
+        "The variety of alarm actions allows for various types of automation."
+      ],
+      "pros": [
+        "Proactive monitoring",
+        "Automation of actions",
+        "Faster incident response"
+      ],
+      "cons": [
+        "Difficult to set appropriate thresholds (false positives/negatives)",
+        "Management can become complex with many alarms"
+      ]
+    }
+  },
+  "SubscriptionFilters": {
+    "name": "CloudWatch Logs Subscription Filters",
+    "description": "A feature of CloudWatch Logs that allows you to filter log events from a log stream in real time and deliver them to other AWS services like Lambda, Kinesis, or Elasticsearch Service.",
+    "usability": {
+      "reviews": [
+        "We built a system that triggers a Lambda to notify Slack the moment a specific error log is written.",
+        "We forward log data to Kinesis in real time for stream processing.",
+        "You need to get used to the filter pattern syntax."
+      ],
+      "pros": [
+        "Real-time log processing",
+        "Enables event-driven architectures",
+        "Flexible integration with other AWS services"
+      ],
+      "cons": [
+        "Learning curve for filter patterns",
+        "Risk of unintended behavior from misconfiguration"
+      ]
+    }
+  },
+  "AutomatedBackups": {
+    "name": "Automated Backups",
+    "description": "A feature provided by services like RDS and DynamoDB that automatically backs up your database. A daily snapshot is created within a specified backup window, and transaction logs are also saved, enabling point-in-time recovery.",
+    "usability": {
+      "reviews": [
+        "It's very easy because we no longer have to think about backup operations at all.",
+        "It gives us peace of mind knowing we can restore to any point in time in case of an emergency.",
+        "It's important to set the backup window to an appropriate time."
+      ],
+      "pros": [
+        "Reduced operational overhead",
+        "High reliability",
+        "Point-in-time recovery"
+      ],
+      "cons": [
+        "Incurs costs for backup storage",
+        "Slight impact on performance"
+      ]
+    }
+  },
+  "Failover": {
+    "name": "Failover",
+    "description": "A mechanism that automatically switches processing to a standby component when the primary component (e.g., DB instance, EC2 instance) fails. Implemented in features like RDS Multi-AZ, it achieves high availability for a system.",
+    "usability": {
+      "reviews": [
+        "I was surprised that automatic failover was achieved just by enabling Multi-AZ.",
+        "When a failure occurred, it switched over automatically, which prevented a service outage.",
+        "The connection drops for a moment during failover, so a reconnection logic on the application side is necessary."
+      ],
+      "pros": [
+        "Achieves high availability",
+        "Minimizes downtime",
+        "Automatic failure recovery"
+      ],
+      "cons": [
+        "Incurs costs for the standby instance",
+        "Momentary performance degradation during failover"
+      ]
+    }
+  },
+  "RDSProxy": {
+    "name": "Amazon RDS Proxy",
+    "description": "A fully managed, highly available database proxy for RDS. It efficiently manages a large number of connections and improves application scalability and resilience by sharing a pool of database connections.",
+    "usability": {
+      "reviews": [
+        "It solved the problem of exhausting connections when connecting to RDS from Lambda.",
+        "I'm satisfied that the failover time has been significantly reduced.",
+        "It was easy to use, just by changing the application's connection endpoint to the proxy."
+      ],
+      "pros": [
+        "Connection pooling",
+        "Faster failover",
+        "Improved security (IAM authentication)"
+      ],
+      "cons": [
+        "Incurs additional costs",
+        "Limited to specific DB engines",
+        "Some SQL features may not be supported"
+      ]
+    }
+  },
+  "Sharding": {
+    "name": "Sharding",
+    "description": "A technique of partitioning a large database into multiple smaller databases called shards. By distributing data, it distributes read/write load and improves the overall scalability of the system. In AWS, DynamoDB does this automatically internally.",
+    "usability": {
+      "reviews": [
+        "Sharding is essential for large-scale services with high write traffic.",
+        "With DynamoDB, you can get the benefits of scalability without having to think about sharding.",
+        "Manually implementing and operating sharding is extremely complex and difficult."
+      ],
+      "pros": [
+        "High scalability",
+        "Improved read/write performance",
+        "Load balancing"
+      ],
+      "cons": [
+        "Implementation and operational complexity (if manual)",
+        "Queries spanning multiple shards are difficult",
+        "Requires careful attention to data skew"
+      ]
+    }
+  },
+  "Encryption": {
+    "name": "Encryption",
+    "description": "The process of converting data so it cannot be read by third parties. AWS supports encryption for both data at rest and data in transit. It's common to use KMS to manage encryption keys.",
+    "usability": {
+      "reviews": [
+        "Enabling encryption on S3 and RDS was very easy, just a matter of checking a box.",
+        "Operations are easy because we can delegate key management to AWS with KMS.",
+        "Encryption is a mandatory feature to meet our security requirements."
+      ],
+      "pros": [
+        "Data protection",
+        "Compliance with security standards",
+        "Easy configuration"
+      ],
+      "cons": [
+        "Slight overhead from encryption/decryption",
+        "Key management becomes critical"
+      ]
+    }
+  },
+  "DataRetention": {
+    "name": "Data Retention",
+    "description": "The policy or setting that defines how long data should be stored. Features like S3 Lifecycle policies or RDS automated backup retention periods allow you to define data retention and automatically delete or archive data that is no longer needed.",
+    "usability": {
+      "reviews": [
+        "Using S3 Lifecycle policies to automatically move old logs to Glacier has resulted in cost savings.",
+        "It's great that we can flexibly set the backup retention period.",
+        "We configure data retention periods to align with legal and compliance requirements."
+      ],
+      "pros": [
+        "Storage cost optimization",
+        "Meeting compliance requirements",
+        "Automation of operations"
+      ],
+      "cons": [
+        "Risk of losing necessary data due to misconfigured policies",
+        "Requires planning on what data to retain and for how long"
+      ]
+    }
+  },
+  "PointInTimeRecovery": {
+    "name": "Point-in-Time Recovery (PITR)",
+    "description": "A feature that restores a database to a specific point in time (down to the second). Supported by services like RDS and DynamoDB, it is achieved by combining daily backups with transaction logs. It's effective for recovering from accidental data deletion or modification.",
+    "usability": {
+      "reviews": [
+        "This feature saved us when we accidentally deleted data due to an operational error.",
+        "It's reassuring that we can restore to an almost immediate state, up to five minutes ago.",
+        "It's wonderful that just by enabling it, we are prepared for emergencies."
+      ],
+      "pros": [
+        "Flexible data recovery",
+        "Recovery from human error",
+        "High level of data protection"
+      ],
+      "cons": [
+        "Incurs additional costs when enabled (e.g., log storage)",
+        "The restoration process takes time"
+      ]
+    }
+  },
+  "ReadCapacityUnit": {
+    "name": "Read Capacity Unit (RCU)",
+    "description": "A unit of throughput capacity in DynamoDB. One RCU can perform one strongly consistent read per second, or two eventually consistent reads per second, for an item up to 4 KB in size. It is configured in advance in provisioned mode.",
+    "usability": {
+      "reviews": [
+        "We can optimize costs by finely setting the RCUs according to the required read performance.",
+        "It's convenient that Auto Scaling can adjust it automatically based on traffic.",
+        "Understanding the concept of RCUs and WCUs was a bit difficult at first."
+      ],
+      "pros": [
+        "Cost optimization",
+        "Predictable performance",
+        "Flexible scaling"
+      ],
+      "cons": [
+        "Difficult to forecast appropriate capacity",
+        "Throttling occurs if the setting is exceeded"
+      ]
+    }
+  },
+  "Transactions": {
+    "name": "Transactions",
+    "description": "A feature that guarantees a series of operations are executed on an 'all-or-nothing' basis. Supported by services like DynamoDB, it maintains consistency for a set of operations across multiple tables or items.",
+    "usability": {
+      "reviews": [
+        "It helps maintain data integrity in processes that need to update multiple tables simultaneously.",
+        "We were able to implement it simply, whereas before we had to write complex logic on the application side.",
+        "Transactions consume more capacity than regular reads and writes."
+      ],
+      "pros": [
+        "Guarantees data consistency (ACID)",
+        "Simplifies application logic",
+        "Atomic operations on multiple items/tables"
+      ],
+      "cons": [
+        "High consumption of capacity units",
+        "Limit on the number of items that can be operated on at once"
+      ]
+    }
+  },
+  "StorageClassAnalysis": {
+    "name": "S3 Storage Class Analysis",
+    "description": "An S3 feature that analyzes object access patterns to recommend transitioning to more cost-effective storage classes. It provides insights for optimizing lifecycle policies.",
+    "usability": {
+      "reviews": [
+        "It was helpful to get specific recommendations on which data to move to IA or Glacier.",
+        "We significantly reduced storage costs by setting lifecycle rules based on the analysis results.",
+        "It's important to note that the analysis itself incurs a cost."
+      ],
+      "pros": [
+        "Storage cost optimization",
+        "Data-driven decision making",
+        "Simplification of lifecycle policy configuration"
+      ],
+      "cons": [
+        "Incurs a fee for analysis",
+        "Takes time to get analysis results"
+      ]
+    }
+  },
+  "S3RequesterPays": {
+    "name": "S3 Requester Pays",
+    "description": "A feature that configures an S3 bucket so that the requester (the one downloading the data) pays for data transfer and request costs, instead of the bucket owner. This can reduce the owner's costs when distributing large datasets.",
+    "usability": {
+      "reviews": [
+        "It was helpful not to have to worry about transfer fees when distributing large amounts of data to many people.",
+        "The use case is selective, as the requester also needs an AWS account.",
+        "The bucket-level setting was easy to configure."
+      ],
+      "pros": [
+        "Reduction of data distribution costs",
+        "Sharing of large datasets",
+        "Clarification of cost liability"
+      ],
+      "cons": [
+        "Requester must have an AWS account",
+        "Cannot be used for anonymous access"
+      ]
+    }
+  },
+  "S3EventNotificationDestinations": {
+    "name": "S3 Event Notifications Destinations",
+    "description": "The destinations to which notifications can be sent when a specific event (e.g., object creation, deletion) occurs in an S3 bucket. Lambda functions, SNS topics, and SQS queues can be specified, serving as a starting point for building event-driven processes.",
+    "usability": {
+      "reviews": [
+        "We easily implemented a process to automatically generate thumbnails with Lambda, triggered by an image upload.",
+        "Event notification settings can be configured intuitively from the console.",
+        "Appropriate permissions are required for each destination service."
+      ],
+      "pros": [
+        "Building event-driven architectures",
+        "Automation of processes",
+        "Flexible integration with other AWS services"
+      ],
+      "cons": [
+        "Risk of unintended loops due to misconfiguration",
+        "Notification reliability can sometimes be best-effort"
+      ]
+    }
+  },
+  "SignedURLs": {
+    "name": "Signed URLs",
+    "description": "A URL that provides temporary access to a private object in S3 or CloudFront. The URL itself contains authentication credentials and an expiration time, used for things like content delivery for membership sites.",
+    "usability": {
+      "reviews": [
+        "It's convenient for allowing a specific user to download a private file for a limited time.",
+        "Generating a signed URL is easy using the SDK.",
+        "You can enhance security by setting a short expiration time."
+      ],
+      "pros": [
+        "Temporary access permission",
+        "Secure sharing of private content",
+        "Flexible access control"
+      ],
+      "cons": [
+        "Anyone can access the content if the URL is leaked",
+        "Requires implementing URL generation logic in the application"
+      ]
+    }
+  },
+  "Glacier": {
+    "name": "Amazon S3 Glacier",
+    "description": "A secure, durable, and extremely low-cost S3 storage class for data archiving and long-term backup. As data retrieval takes several minutes to hours, it is suitable for storing data that is not frequently accessed.",
+    "usability": {
+      "reviews": [
+        "We dramatically reduced storage costs by using it as an archive for logs that needed long-term retention.",
+        "If you understand that retrieval takes time, it's extremely cost-effective.",
+        "Operations are easy because S3 lifecycle policies can automatically move data to Glacier."
+      ],
+      "pros": [
+        "Extremely low storage cost",
+        "High durability and security",
+        "Seamless integration with S3"
+      ],
+      "cons": [
+        "Data retrieval is slow",
+        "Has minimum storage duration and early deletion fees",
+        "Not suitable for frequent access"
+      ]
+    }
+  },
+  "S3AccessAnalyzer": {
+    "name": "IAM Access Analyzer for S3",
+    "description": "A feature that analyzes S3 bucket access policies to identify and warn about buckets that might grant unintended external access, such as being accessible to anyone on the internet.",
+    "usability": {
+      "reviews": [
+        "It helped us find a publicly configured bucket we weren't aware of, preventing a security risk.",
+        "By checking periodically, we can maintain healthy access permissions for our buckets.",
+        "I appreciate that it's available for free."
+      ],
+      "pros": [
+        "Identification of security risks",
+        "Prevention of unintended data leakage",
+        "Detection of configuration mistakes"
+      ],
+      "cons": [
+        "Requires understanding the intent of warnings and taking action",
+        "It only analyzes and warns, it does not auto-remediate"
+      ]
+    }
+  },
+  "IAMDatabaseAuthentication": {
+    "name": "IAM Database Authentication",
+    "description": "A feature for RDS for MySQL/PostgreSQL and Aurora that allows you to use IAM users or roles for database authentication. It improves security by eliminating the need to manage passwords and using temporary IAM credentials to connect to the DB.",
+    "usability": {
+      "reviews": [
+        "Our security improved significantly by not having to embed DB user passwords in code.",
+        "It's very convenient to manage DB access permissions centrally with IAM.",
+        "There's an extra step of generating a temporary auth token on connection, but the SDK handles it."
+      ],
+      "pros": [
+        "No password management needed",
+        "Enhanced security",
+        "Centralized access control with IAM"
+      ],
+      "cons": [
+        "Limited to specific DB engines",
+        "Requires application-side changes (to get the token)"
+      ]
+    }
+  },
+  "IAMRoleTrustPolicy": {
+    "name": "IAM Role Trust Policy",
+    "description": "A policy attached to an IAM role that defines which entities (users, other AWS accounts, AWS services) are permitted to assume that role (AssumeRole). It's a critical setting for defining trust relationships.",
+    "usability": {
+      "reviews": [
+        "I set this policy when giving an EC2 instance permissions to access S3.",
+        "I feel it's a security fundamental because it clearly defines who or what can use the role.",
+        "I was a bit confused at first because it's written in JSON format."
+      ],
+      "pros": [
+        "Achieves the principle of least privilege",
+        "Secure delegation of permissions",
+        "Enables inter-service collaboration"
+      ],
+      "cons": [
+        "Misconfiguration can lead directly to security risks",
+        "Requires familiarity with writing JSON"
+      ]
+    }
+  },
+  "AWSIAMIdentityCenter": {
+    "name": "AWS IAM Identity Center (successor to AWS SSO)",
+    "description": "A service for centrally creating and managing access to multiple AWS accounts and business applications. It integrates with external identity providers (like Azure AD, Okta) to provide users with a single sign-on (SSO) experience.",
+    "usability": {
+      "reviews": [
+        "Operations became dramatically easier, freeing us from managing IAM users in multiple accounts.",
+        "It's convenient for users because they can log into AWS with the IdP they normally use.",
+        "The initial setup has a few steps, but the documentation is thorough."
+      ],
+      "pros": [
+        "Centralized management of multiple accounts",
+        "Enables Single Sign-On (SSO)",
+        "Enhanced security"
+      ],
+      "cons": [
+        "Initial setup is somewhat complex",
+        "Integration with external IdPs requires some knowledge"
+      ]
+    }
+  },
+  "InstanceProfile": {
+    "name": "Instance Profile",
+    "description": "A container for an IAM role that an EC2 instance uses to obtain temporary credentials associated with its role. It's used when assigning an IAM role to an EC2 instance, allowing applications running on the instance to access AWS services.",
+    "usability": {
+      "reviews": [
+        "Security has improved significantly since we no longer need to store access keys on the EC2 instance.",
+        "It's convenient to change permissions just by changing the role attached to the EC2, without modifying application code.",
+        "You must remember to set it when launching an EC2 instance."
+      ],
+      "pros": [
+        "Simplified credential management",
+        "High security",
+        "Flexible permission management"
+      ],
+      "cons": [
+        "Changing a role may require restarting the instance",
+        "The concepts of IAM roles and instance profiles can be a bit confusing"
+      ]
+    }
+  },
+  "DNSHostnamesOption": {
+    "name": "VPC DNS Hostnames Option",
+    "description": "A VPC option that, when enabled, automatically assigns public DNS hostnames to EC2 instances launched within the VPC. This only applies to instances that have a public IP address.",
+    "usability": {
+      "reviews": [
+        "This is a convenient setting when you want to access instances by a recognizable name.",
+        "Some AWS services may not work correctly unless this setting and 'DNS resolution' are enabled.",
+        "It's enabled in the default VPC, but you need to consciously set it for custom VPCs."
+      ],
+      "pros": [
+        "Automatic assignment of public DNS hostnames",
+        "Easier access to instances",
+        "Compatibility with AWS services"
+      ],
+      "cons": [
+        "Potential for unintentional exposure of hostnames externally",
+        "Some services may fail to connect if disabled"
+      ]
+    }
+  },
+  "FailoverRouting": {
+    "name": "Route 53 Failover Routing Policy",
+    "description": "A routing policy in Route 53 that monitors the health of a primary resource. If it detects an issue, it automatically switches DNS query routing to a secondary (standby) resource.",
+    "usability": {
+      "reviews": [
+        "When a failure occurred in one region, it helped that it automatically switched to the other region.",
+        "You can easily achieve a simple Active-Passive high-availability setup.",
+        "If health checks are not configured correctly, it can lead to unintended failovers."
+      ],
+      "pros": [
+        "Achieves high availability",
+        "Automatic failure recovery",
+        "Ease of configuration"
+      ],
+      "cons": [
+        "Switching delays due to DNS caching",
+        "Proper health check configuration is critical"
+      ]
+    }
+  },
+  "MultivalueAnswerRouting": {
+    "name": "Route 53 Multivalue Answer Routing Policy",
+    "description": "A routing policy in Route 53 that responds to DNS queries with multiple values (e.g., IP addresses). It performs health checks on each resource and returns only the IPs of healthy resources, achieving simple load balancing and improved availability.",
+    "usability": {
+      "reviews": [
+        "I use it to set up multiple web servers for simple load balancing and redundancy.",
+        "It's useful for small-scale setups that don't warrant an ELB.",
+        "It's a mechanism that relies on the client side to randomly pick an IP."
+      ],
+      "pros": [
+        "Simple load balancing",
+        "Improved availability",
+        "Lower cost than an ELB"
+      ],
+      "cons": [
+        "Even load distribution is not guaranteed",
+        "Cannot maintain session affinity"
+      ]
+    }
+  },
+  "PublicHostedZone": {
+    "name": "Public Hosted Zone",
+    "description": "A Route 53 feature that acts as a container for defining how to respond to DNS queries from the internet. It manages record sets for routing traffic for a domain name (e.g., example.com) to resources like web servers or S3 buckets.",
+    "usability": {
+      "reviews": [
+        "The web console is intuitive, making DNS record management very easy.",
+        "The integration with various AWS services (Alias records) is very powerful.",
+        "There is a monthly fee for each hosted zone."
+      ],
+      "pros": [
+        "High availability and reliability",
+        "Seamless integration with AWS services",
+        "Intuitive management console"
+      ],
+      "cons": [
+        "Incurs a fixed monthly fee",
+        "Requires some knowledge of DNS"
+      ]
+    }
+  },
+  "LambdaLayers": {
+    "name": "Lambda Layers",
+    "description": "A Lambda feature that allows you to package dependencies like libraries or custom runtimes as a ZIP file and share them across multiple Lambda functions. It helps keep deployment package sizes small and streamlines code management.",
+    "usability": {
+      "reviews": [
+        "Deployments became much faster after I consolidated commonly used libraries into a layer.",
+        "It's easier to manage because you can separate code from dependencies.",
+        "The versioning feature allows for safe updates."
+      ],
+      "pros": [
+        "Reduces deployment package size",
+        "Improves code reusability",
+        "Simplifies dependency management"
+      ],
+      "cons": [
+        "There is a limit to the number of layers",
+        "Local testing can become slightly more complex"
+      ]
+    }
+  },
+  "LambdaVPCAccess": {
+    "name": "Lambda VPC Access",
+    "description": "A setting to place a Lambda function inside a VPC, allowing it to securely access private resources within the VPC (like RDS, ElastiCache) without going through the internet. An Elastic Network Interface (ENI) is attached to the Lambda function.",
+    "usability": {
+      "reviews": [
+        "Now our Lambda can securely access our private RDS database.",
+        "This is an essential feature when security requirements demand blocking external communication.",
+        "You need to be aware of increased cold start times due to ENI creation."
+      ],
+      "pros": [
+        "Secure access to private resources",
+        "Enhanced network security",
+        "Integration with services inside a VPC"
+      ],
+      "cons": [
+        "Increases cold start times (improved by Hyperplane ENI)",
+        "Consumes IP addresses from the VPC"
+      ]
+    }
+  },
+  "AutoScaling": {
+    "name": "AWS Auto Scaling",
+    "description": "A service that automatically increases or decreases the number of resources like EC2 instances based on application load. It maintains performance by adding resources during high demand and reduces costs by removing resources during low demand.",
+    "usability": {
+      "reviews": [
+        "It automatically handles traffic spikes, so we no longer worry about our servers going down.",
+        "The cost savings are significant because it reduces instances during off-peak hours.",
+        "Tuning the scaling policies is key to balancing performance and cost."
+      ],
+      "pros": [
+        "Improved availability",
+        "Cost optimization",
+        "Enhanced fault tolerance"
+      ],
+      "cons": [
+        "Difficult to configure optimal scaling policies",
+        "Scaling out/in can take time"
+      ]
+    }
+  },
+  "HealthChecks": {
+    "name": "Health Checks",
+    "description": "A mechanism used by ELB, Auto Scaling, and Route 53 to verify that target resources (like EC2 instances) are operating correctly. It automatically detaches unhealthy resources to prevent traffic from being sent to them.",
+    "usability": {
+      "reviews": [
+        "It prevents a total service outage by automatically detaching instances whose applications have become unresponsive.",
+        "It's great that you can finely tune the health check interval and thresholds.",
+        "It's crucial to correctly configure the health check path."
+      ],
+      "pros": [
+        "High reliability and availability",
+        "Automatic failure detection and recovery",
+        "Stable system operation"
+      ],
+      "cons": [
+        "Misconfigured health checks can cause false positives",
+        "Temporary high load can cause health check failures"
+      ]
+    }
+  },
+  "ScaleOut": {
+    "name": "Scale Out",
+    "description": "An approach to increasing system capacity by adding more servers (horizontal scaling). Achieved with services like Auto Scaling, it distributes the load per machine. The opposite is Scale Up (increasing server specs).",
+    "usability": {
+      "reviews": [
+        "We were able to flexibly handle sudden traffic increases by adding more instances.",
+        "Scaling out with multiple servers provides better fault tolerance than a single high-spec server.",
+        "A stateless application is a prerequisite for scaling out."
+      ],
+      "pros": [
+        "High flexibility and scalability",
+        "Improved fault tolerance",
+        "Can be cost-effective"
+      ],
+      "cons": [
+        "Increases system complexity",
+        "Difficult to apply to stateful applications"
+      ]
+    }
+  },
+  "ElastiCacheForRedis": {
+    "name": "ElastiCache for Redis",
+    "description": "A managed in-memory data store service provided by AWS. It's used for use cases requiring fast responses, such as caching, session stores, and real-time analytics. It offers high performance and scalability.",
+    "usability": {
+      "reviews": [
+        "It reduced the load on our database and dramatically improved application response times.",
+        "The biggest benefit is offloading tedious operational management to AWS.",
+        "You can easily scale out using cluster mode."
+      ],
+      "pros": [
+        "Ultra-fast performance",
+        "High scalability",
+        "Rich data structures"
+      ],
+      "cons": [
+        "Data is not persistent as it's in-memory (persistence option available)",
+        "Relatively high cost"
+      ]
+    }
+  },
+  "ElastiCacheForMemcached": {
+    "name": "ElastiCache for Memcached",
+    "description": "A managed in-memory caching service provided by AWS. It is a simple key-value store specialized for object caching. It is suitable when the simplest possible model is desired.",
+    "usability": {
+      "reviews": [
+        "It's very simple and easy to use, with sufficient performance for caching purposes.",
+        "It tends to have lower CPU usage than Redis, making it suitable for large-scale caching.",
+        "If you need multiple data types or persistence, you should choose Redis."
+      ],
+      "pros": [
+        "Simplicity and ease of use",
+        "High throughput due to multithreading",
+        "Low latency"
+      ],
+      "cons": [
+        "No data persistence",
+        "Simple data types (strings and binaries only)",
+        "Not as feature-rich as Redis"
+      ]
+    }
+  },
+  "WriteThroughCaching": {
+    "name": "Write-Through Caching",
+    "description": "A caching strategy where data is first written to the cache and then to the database. The operation is not considered complete until both writes succeed, ensuring data consistency between the cache and DB, but increasing write latency.",
+    "usability": {
+      "reviews": [
+        "We use this strategy in systems where data consistency is critical.",
+        "Reads become faster, but write latency can sometimes be an issue.",
+        "The implementation is relatively simple and easy to understand."
+      ],
+      "pros": [
+        "High data consistency",
+        "No need to read data from DB on a cache miss",
+        "Relatively easy implementation"
+      ],
+      "cons": [
+        "Increased write latency",
+        "Writes data to the cache that may not be used frequently"
+      ]
+    }
+  },
+  "CloudFormationStackSets": {
+    "name": "CloudFormation StackSets",
+    "description": "An extension of CloudFormation that allows you to create, update, or delete CloudFormation stacks across multiple AWS accounts and regions from a single template. Used for things like deploying baseline configurations across an organization.",
+    "usability": {
+      "reviews": [
+        "It became very easy to deploy common IAM roles and security settings to all accounts.",
+        "It dramatically streamlines resource management across multiple accounts and regions.",
+        "The concept is difficult to grasp at first, but it's a powerful tool once you get used to it."
+      ],
+      "pros": [
+        "Centralized management of multiple accounts/regions",
+        "Strengthens governance and compliance",
+        "Improved operational efficiency"
+      ],
+      "cons": [
+        "High learning curve",
+        "Complex troubleshooting when errors occur"
+      ]
+    }
+  },
+  "CloudFormationChangeSets": {
+    "name": "CloudFormation Change Sets",
+    "description": "A feature that allows you to preview the changes before updating a CloudFormation stack. You can see which resources will be added, modified, or deleted in advance, preventing unintended changes and enabling safe stack updates.",
+    "usability": {
+      "reviews": [
+        "I can deploy with confidence because I can check the impact before changing the production infrastructure.",
+        "This is an essential feature to prevent accidental deletion or replacement of resources.",
+        "We established a safe operational flow of reviewing changes before execution."
+      ],
+      "pros": [
+        "Safe infrastructure updates",
+        "Preview of changes in advance",
+        "Prevention of unintended changes"
+      ],
+      "cons": [
+        "Adds an extra step to stack updates",
+        "Some changes, like those with dynamic references, cannot be previewed"
+      ]
+    }
+  },
+  "CloudFormationDriftDetection": {
+    "name": "CloudFormation Drift Detection",
+    "description": "A feature to detect whether resources managed by CloudFormation have been modified manually or otherwise outside of the template's definition (drift). It helps maintain configuration integrity by checking if the infrastructure state matches the code.",
+    "usability": {
+      "reviews": [
+        "It helped us identify where someone had manually changed settings from the console.",
+        "It's crucial for practicing IaC to confirm that the configuration has not diverged from the code.",
+        "We run drift detection periodically to maintain the health of our infrastructure."
+      ],
+      "pros": [
+        "Maintains configuration integrity",
+        "Detection of manual changes",
+        "Improves reliability of Infrastructure as Code"
+      ],
+      "cons": [
+        "Does not automatically remediate drift",
+        "Some resources do not support drift detection"
+      ]
+    }
+  }
 }
